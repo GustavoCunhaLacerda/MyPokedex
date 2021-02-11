@@ -1,19 +1,16 @@
 import './App.css';
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-import MiniCard from './layout/MiniCard';
+import Content from './layout/Content';
+import Title from './layout/Title';
 
 export default function App(props) {
-    let miniCards = [];
-    for (let i = 1; i <= 151; i++) {
-        miniCards.push(
-            <MiniCard pokedexNumber={i} key={i}/>
-        );
-    }
-
     return (
         <div className="App">
-            {miniCards}
+            <Router>
+                <Content></Content>
+            </Router>
         </div>
     );
 };
