@@ -1,0 +1,21 @@
+.MiniCard {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;
+
+    margin: 10px;
+    min-width: 180px;
+    max-width: 180px;
+    height: 300px;
+    border-radius: 20px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.MiniCard p {
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
