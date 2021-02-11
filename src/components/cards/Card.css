@@ -1,0 +1,113 @@
+.Card {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.Card .container {
+    width: 50%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.Card .card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+}
+
+.Card .poke {
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: lightcoral; */
+}
+
+.Card .poke img {
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.Card .circle {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right,
+        #F08030aa,
+        #7038F8aa
+    );
+    position: absolute;
+    border-radius: 50%;
+}
+
+.Card .info {
+    text-align: center;
+}
+
+.Card .info h1 {
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    transition: all 0.75s ease-out;
+}
+
+.Card .info h3 {
+    font-size: 1rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.Card .types {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.Card .types button {
+    padding: 0.5rem 2rem;
+    width: 40%;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #585858;
+}
+
+.Card .types button:nth-child(1) {
+    background-color: #F08030;
+    color: #fff;
+}
+
+.Card .types button:nth-child(2) {
+    background-color: #7038F8;
+    color: #fff;
+}
+
+.Card .number {
+    margin-top: 3rem;
+}
+
+.Card .number button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background: #666;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+}
