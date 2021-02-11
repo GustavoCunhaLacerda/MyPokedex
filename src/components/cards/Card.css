@@ -87,12 +87,12 @@
 }
 
 .Card .types button:nth-child(1) {
-    background-color: #F08030;
+    background-color: #CCC;
     color: #fff;
 }
 
 .Card .types button:nth-child(2) {
-    background-color: #7038F8;
+    background-color: #CCC;
     color: #fff;
 }
 

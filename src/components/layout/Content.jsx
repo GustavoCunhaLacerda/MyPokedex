@@ -8,7 +8,7 @@ export default function Content(props) {
     return (
         <main className="Content">
             <Switch>
-                <Route path="/single-card">
+                <Route path="/single-card/:pokedexNumber">
                     <SingleCard></SingleCard>
                 </Route>
                 <Route path="/">

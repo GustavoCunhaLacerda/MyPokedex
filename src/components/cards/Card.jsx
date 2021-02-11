@@ -1,9 +1,11 @@
 import './Card.css';
 import React from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export default function Card(props) {
+
+    const { pokedexNumber } = useParams();
 
     React.useEffect(() => {
 
@@ -36,9 +38,7 @@ export default function Card(props) {
 
 
         // Get pokemon
-        let url = 'https://pokeapi.co/api/v2/pokemon/1'
-        // url += props.pokeNumber;
-
+        let url = `https://pokeapi.co/api/v2/pokemon/${pokedexNumber}`;
         getPokemon(url);
 
 
@@ -71,7 +71,7 @@ export default function Card(props) {
             types.style.transform = 'translateZ(0px)';
             description.style.transform = 'translateZ(0px)';
         });
-    }, []);
+    }, [pokedexNumber]);
 
 
 
