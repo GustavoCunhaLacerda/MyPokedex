@@ -2,4 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
+    background: #cb2d3e;
+    background: -webkit-linear-gradient(to top, #ef473a, #cb2d3e);
+    background: linear-gradient(to top, #ef473a, #cb2d3e);
 }

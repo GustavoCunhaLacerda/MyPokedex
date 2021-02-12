@@ -1,7 +1,9 @@
 .Title h1 {
     text-align: center;
     width: 90vw;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lexend Mega', sans-serif;
     font-weight: 500;
     font-size: 3.4rem;
+    color: #fff;
+    text-transform: uppercase;
 }
