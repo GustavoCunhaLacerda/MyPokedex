@@ -1,3 +1,43 @@
+:root {
+    --color-normal: #A8A77A;
+    --color-fire:  #EE8130;
+    --color-water:  #6390F0;
+    --color-electric:  #F7D02C;
+    --color-grass:  #7AC74C;
+    --color-ice:  #96D9D6;
+    --color-fighting:  #C22E28;
+    --color-poison:  #A33EA1;
+    --color-ground:  #E2BF65;
+    --color-flying:  #A98FF3;
+    --color-psychic:  #F95587;
+    --color-bug:  #A6B91A;
+    --color-rock:  #B6A136;
+    --color-ghost:  #735797;
+    --color-dragon:  #6F35FC;
+    --color-dark:  #705746;
+    --color-steel:  #B7B7CE;
+    --color-fairy:  #D685AD;
+}
+
+.Card .type-normal {background-color: var(--color-normal);}
+.Card .type-fire {background-color: var(--color-fire);}
+.Card .type-water {background-color: var(--color-water);}
+.Card .type-electric {background-color: var(--color-electric);}
+.Card .type-grass {background-color: var(--color-grass);}
+.Card .type-ice {background-color: var(--color-ice);}
+.Card .type-fighting {background-color: var(--color-fighting);}
+.Card .type-poison {background-color: var(--color-poison);}
+.Card .type-ground {background-color: var(--color-ground);}
+.Card .type-flying {background-color: var(--color-flying);}
+.Card .type-psychic {background-color: var(--color-psychic);}
+.Card .type-bug {background-color: var(--color-bug);}
+.Card .type-rock {background-color: var(--color-rock);}
+.Card .type-ghost {background-color: var(--color-ghost);}
+.Card .type-dragon {background-color: var(--color-dragon);}
+.Card .type-dark {background-color: var(--color-dark);}
+.Card .type-steel {background-color: var(--color-steel);}
+.Card .type-fairy {background-color: var(--color-fairy);}
+
 .Card {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
@@ -9,13 +49,14 @@
 
 .Card .container {
     width: 50%;
-    /* display: flex; */
     justify-content: center;
     align-items: center;
     display: none;
 }
 
 .Card .card {
+    background-color: #fff;
+
     transform-style: preserve-3d;
     min-height: 80vh;
     width: 35rem;
@@ -41,11 +82,7 @@
 .Card .circle {
     width: 15rem;
     height: 15rem;
-    background: linear-gradient(
-        to right,
-        #F08030aa,
-        #7038F8aa
-    );
+    opacity: 0.8;
     position: absolute;
     border-radius: 50%;
 }
@@ -55,7 +92,8 @@
 }
 
 .Card .info h1 {
-    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
     font-size: 2.5rem;
     transition: all 0.75s ease-out;
 }
@@ -70,30 +108,24 @@
 
 .Card .types {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     transition: all 0.75s ease-out;
+    margin-bottom: -20px;
+    margin-top: -20px;
 }
 
 .Card .types button {
     padding: 0.5rem 2rem;
     width: 40%;
-    background: none;
     border: none;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
     border-radius: 30px;
     cursor: pointer;
     font-weight: bold;
-    color: #585858;
-}
 
-.Card .types button:nth-child(1) {
-    background-color: #CCC;
     color: #fff;
-}
-
-.Card .types button:nth-child(2) {
-    background-color: #CCC;
-    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 }
 
 .Card .number {
