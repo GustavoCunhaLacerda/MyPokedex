@@ -11,13 +11,13 @@
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/GustavoCunhaLacerda/MyPokedex">
 
-  <a href="https://www.linkedin.com/in/eliasgcf/">
+  <a href=#>
     <img alt="Made by" src="https://img.shields.io/badge/made%20by-Gustavo%20Lacerda-gree">
   </a>
   
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/GustavoCunhaLacerda/MyPokedex">
   
-  <a href="https://github.com/EliasGcf/readme-template/commits/master">
+  <a href=#>
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/GustavoCunhaLacerda/MyPokedex">
   </a>
   
