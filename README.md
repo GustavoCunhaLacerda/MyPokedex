@@ -1,5 +1,5 @@
 <h1 align="center">
-	<img alt="Logo" src="https://pokedex.dev/static/media/pokemon.0cfd06a2.png" width="180px" />
+	<img alt="Logo" src="https://img.icons8.com/office/452/pokedex.png" width="180px" />
 </h1>
 
 <h3 align="center">
